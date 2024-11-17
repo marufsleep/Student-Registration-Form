@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="reghead">
+        <!-- <center></center> -->
+        <br />
+        <b>
+            <u><h1 id="h1">STUDENT REGISTRATION FORM</h1></u>
+        </b>
+    <div id="form">
+        <form action="submit.html" method="get">
+            <table id="table">
+                <tr>
+                    <td>FIRST NAME: </td>
+
+                    <td>
+                        <input 
+                        type="text"
+                        name="username"
+                        size="30"
+                        maxlength="30"
+                        placeholder="Enter first name"
+                        >(max 30 characters A-Z & a-z)
+                       </td>
+                       </tr>
+                       <tr>
+                        <td>LAST NAME: </td>
+                        <td>
+                            <input 
+                            type="text"
+                            name="username"
+                            size="30"
+                            maxlength="30"
+                            placeholder="Enter last name"
+                            >
+                            (max 30 characters A-Z & a-z)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DATE OF BIRTH:</td>
+                        <td>
+                            <input type="number" name="day"
+                            size="2"
+                            maxlength="2"
+                            placeholder="Day"
+                            min="1"
+                            max="31">
+                            <select name="month" id="">
+                                <option value="month">Month</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                            <input type="number"
+                            name="year"
+                            size="5"
+                            maxlength="4"
+                            placeholder="Year"
+                            min="1991"
+                            max="2010"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL ID:</td>
+                        <td>
+                            <input type="email"
+                            id="email"
+                            name="email"
+                            size="30"
+                            maxlength="100"
+                            >
+                        </td>
+                    </tr>
+                
+                <tr>
+                    <td>MOBILE NO:</td>
+                    <td>
+                        <input type="tel"
+                        name="number"
+                        size="30"
+                        maxlength="12"
+                        placeholder="Enter mobile no"
+                        >
+                        (10 digits number)
+                    </td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <input type="radio"
+                        id="female"
+                        name="gender"
+                        value="f"
+                        >
+                        <label for="female">Female</label>
+
+                        <input type="radio"
+                        id="male"
+                        name="gender"
+                        value="m"
+                        >
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS:</td>
+                    <td>
+                        <textarea rows="4" cols="40" id="comments"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CITY:</td>
+                    <td>
+                        <input type="text"
+                        name="city"
+                        size="30"
+                        maxlength="30"
+                        placeholder="Enter your city name"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>PIN CODE:</td>
+                    <td>
+                        <input type="text"
+                        name="pin"
+                        size="30"
+                        maxlength="6"
+                        placeholder="Enter pin code"
+                        >
+                        (6 digits number)
+                    </td>
+                </tr>
+                <tr>
+                    <td>STATE:</td>
+                    <td>
+                        <input type="text"
+                        name="state"
+                        size="30"
+                        maxlength="30"
+                        placeholder="Enter your state name"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>COUNTRY:</td>
+                    <td>
+                        <input type="text"
+                        name="country"
+                        size="30"
+                        maxlength="30"
+                        placeholder="Enter your city name"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>HOBBIES</td>
+                    <td>
+                        <input type="checkbox"
+                        name="Singing"
+                        value="Singing"
+                        >
+                        Singing
+                        <input type="checkbox"
+                        name="HOBBIES"
+                        value="Dancing"
+                        >
+                        Dancing
+                        <input type="checkbox"
+                        name="HOBBIES"
+                        value="Drawing"
+                        >
+                        Drawing
+                        <input type="checkbox"
+                        name="HOBBIES"
+                        value="Sketching"
+                        >
+                        Sketching
+                        <input type="checkbox"
+                        name="HOBBIES"
+                        value="Others"
+                        >
+                        Others
+                        <input type="text"
+                        name="HOBBIES"
+                        size="30"
+                        maxlength="30"
+                        placeholder="Enter any other hobby"
+                        id="oth"
+                        >
+                    </td>
+                </tr>
+                <tr >
+                    <td>QUALIFICATIONS</td>
+                    <td>
+                        <table width="500px" , height="150px" id="tableQ">
+                            <tr class="qnf">
+                                <th>S.No</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr> 
+                            <tr class="qnf">
+                                <td>1.</td>
+                                <th>Class X</th>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="20"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="10"
+                                    maxlength="10"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="10"
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="qnf">
+                                <td>2.</td>
+                                <th>Class XII</th>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="20"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="10"
+                                    maxlength="10"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="10"
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="qnf">
+                                <td>3.</td>
+                                <th>Graduation</th>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="20"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="10"
+                                    maxlength="10"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="10"
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="qnf">
+                                <td>4.</td>
+                                <th>Masters</th>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="20"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="10"
+                                    maxlength="10"
+                                    >
+                                </td>
+                                <td>
+                                    <input type="text"
+                                    name="state"
+                                    size="15"
+                                    maxlength="10"
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="qnf">
+                                <td></td>
+                                <td></td>
+                                <td>(10 char max)</td>
+                                <td>(upto to decimal)</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="crs">COURSES:</td>
+                    <td class="crs">
+                        <input type="radio"
+                        id="B.Sc"
+                        name="COURSES"
+                        value="B.Sc"
+                        >
+                        <label for="B.Sc">B.Sc</label>
+
+                        <input type="radio"
+                        id="B.Tech"
+                        name="COURSES"
+                        value="B.Tech"
+                        >
+                        <label for="B.Tech">B.Tech</label>                        
+
+                        <input type="radio"
+                        id="BBA"
+                        name="COURSES"
+                        value="BBA"
+                        >
+                        <label for="BBA">BBA</label>
+
+                        <input type="radio"
+                        id="B.A"
+                        name="COURSES"
+                        value="B.A"
+                        >
+                        <label for="B.A">B.A</label>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="submit" class="hoverable-button" onclick="alert('Hello, Sir! Welcome to 𝐌𝐚𝐫𝐮𝐟 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲 🌐')" target="_blank"
+            >Submit</button>
+            <button type="reset" class="hoverable-reset">Reset</button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
